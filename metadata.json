@@ -1,0 +1,5 @@
+{
+  "name": "BẠN HỌC THÔNG MINH",
+  "description": "Một ứng dụng giáo dục cho phép giáo viên tạo và quản lý bài tập theo nhiều chủ đề khác nhau, và học sinh có thể luyện tập các bài tập đó. Ứng dụng tích hợp AI để gợi ý câu hỏi và theo dõi tiến độ học tập.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BẠN HỌC THÔNG MINH</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<style>
+  :root {
+    --primary-blue: #6CC4FF;
+    --accent-yellow: #FFD166;
+    --pastel-pink: #FFC0CB;
+    --text-dark: #1e293b;
+    --text-light: #475569;
+    --bg-light: #f1f5f9;
+    --bg-white: #ffffff;
+    --font-sans: 'Be Vietnam Pro', sans-serif;
+  }
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+  }
+  @keyframes grow {
+    from { transform: scale(0.8); opacity: 0.8; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes pop-in {
+    0% { transform: scale(0.9); opacity: 0; }
+    80% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+  .animate-grow { animation: grow 0.5s ease-out forwards; }
+  .animate-fade-in { animation: fade-in 0.5s ease-in-out forwards; }
+  .animate-pop-in { animation: pop-in 0.3s ease-out forwards; }
+
+  /* Confetti Animation */
+  @keyframes confetti-rain {
+    0% { transform: translateY(-100%) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(150%) rotate(360deg); opacity: 0; }
+  }
+  .confetti {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--accent-yellow);
+    opacity: 0;
+    animation: confetti-rain 1.5s linear forwards;
+  }
+</style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
